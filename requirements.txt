@@ -1,0 +1,10 @@
+streamlit
+beautifulsoup4
+requests
+nltk
+networkx
+scikit-learn>=1.5.0
+transformers
+torch
+rouge-score
+textblob
