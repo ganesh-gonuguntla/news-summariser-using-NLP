@@ -67,7 +67,10 @@ class Summarizer:
                 max_length=max_length, 
                 min_length=min_length, 
                 num_beams=4, 
-                early_stopping=True
+                early_stopping=True,
+                no_repeat_ngram_size=3,
+                repetition_penalty=1.2,
+                length_penalty=2.0
             )
             return self.tokenizer.decode(summary_ids[0], skip_special_tokens=True)
         except Exception as e:
